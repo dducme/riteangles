@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="noindex">
+<title>Thank you — K K Wagh Cubs</title>
+<!-- no-JS fallback for the redirect -->
+<noscript><meta http-equiv="refresh" content="5;url=https://kkwaghcubs.com/"></noscript>
+<link rel="preload" as="font" type="font/woff2" href="fonts/PPAgrandir-NarrowRegular.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/PPAgrandir-WideHeavy.woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="ty-body">
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="logo" href="index.html" aria-label="K K Wagh Cubs home">
+      <picture>
+        <source srcset="assets/logo.webp" type="image/webp">
+        <img src="assets/logo.png" alt="K K Wagh Cubs" width="620" height="210">
+      </picture>
+    </a>
+    <div class="header-actions">
+      <a class="phone-link" href="tel:+919607009871">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        <span>+91 96070 09871</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="ty-main">
+  <div class="shell ty-inner">
+    <picture class="ty-mascot">
+      <source srcset="assets/mascot-tiger.webp" type="image/webp">
+      <img src="assets/mascot-tiger.png" alt="" width="760" height="959" aria-hidden="true">
+    </picture>
+
+    <div class="ty-copy">
+      <span class="ty-tick" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="m5 13 5 5L20 7"/></svg>
+      </span>
+
+      <h1>Thank you!<br><span class="accent">We'll be in touch.</span></h1>
+
+      <p class="ty-lead">Your details are with our admissions team. Someone will call you within one working day to arrange your campus visit.</p>
+
+      <p class="ty-hurry">In a hurry?
+        <a href="tel:+919607009871">Call +91 96070 09871</a> or
+        <a href="https://wa.me/919607000980" target="_blank" rel="noopener">message us on WhatsApp</a>.
+      </p>
+
+      <div class="ty-actions">
+        <a class="btn btn-primary" href="https://kkwaghcubs.com/">Go to our website</a>
+        <a class="btn btn-outline" href="index.html">Back to the landing page</a>
+      </div>
+
+      <p class="ty-redirect">
+        Taking you to <strong>kkwaghcubs.com</strong> in <span id="ty-count">5</span> seconds…
+      </p>
+    </div>
+  </div>
+</main>
+
+<aside class="social-rail" aria-label="Chat with us">
+  <a class="rail rail-wa" href="https://wa.me/919607000980" target="_blank" rel="noopener" aria-label="WhatsApp us">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12Z"/><path d="M9.3 9.2c.4 2.4 3.1 5.1 5.5 5.5l1-1.2 1.6.8-.4 1.5c-2.8.6-7.6-4.2-7-7l1.5-.4.8 1.6Z" fill="currentColor" stroke="none"/></svg>
+  </a>
+</aside>
+
+<script>
+(function () {
+  var DESTINATION = "https://kkwaghcubs.com/";
+  var seconds = 5;
+  var label = document.getElementById("ty-count");
+
+  var timer = setInterval(function () {
+    seconds -= 1;
+    if (label) label.textContent = seconds > 0 ? seconds : 0;
+    if (seconds <= 0) {
+      clearInterval(timer);
+      window.location.replace(DESTINATION);
+    }
+  }, 1000);
+
+  // if they choose a link themselves, stop the countdown racing them
+  document.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", function () { clearInterval(timer); });
+  });
+})();
+</script>
+
+</body>
+</html>
